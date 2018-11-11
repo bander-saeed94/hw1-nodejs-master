@@ -35,7 +35,7 @@ const serverLogic = (req, res) =>{
             'queryStringObject' : {},
             'method' : method,
             'headers' : {},
-            'payload' : ''
+            'payload' : buffer
         }
         const chosenHandler = typeof(router[trimmedPath]) !== 'undefined' ? router[trimmedPath] : handlers.notFound
 
